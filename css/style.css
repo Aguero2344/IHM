@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*poner de fondo de todo una imagen de la carpeta photos*/
+body {
+  /*background degradente de tres colores*/
+  background: linear-gradient(to bottom, #000000, #222,#000000);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 { font-size: 2.2rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.display-1 {
+  font-size: 56px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-light {
+  background: #fff;
+  color: black;
+  border: 2px solid grey;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-orange {
+  background: #e0ff00;
+  color: black;
+  border: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-light:hover {
+  background: #e0ff00;
+  border: 2px solid black;
+  color: black;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+form .form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .7rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fdede8;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+/* Navbar */
+#navbar {
+  overflow: auto;
+  padding: 20px 0;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 16px;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#navbar h1 a {
+  color: #e0ff00;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  scale: 1.3;
+}
+#navbar ul li img{
+  margin-top: 14px;
+  margin-left: 15px;
+}
+/*añadir hover a la imagen*/
+#navbar ul li img:hover {
+    cursor: pointer;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  color:#e0ff00;
+}
+
+/* seccion */
+#seccion {
+  padding: 40px 0;
+  padding-top: 120px;
+}
+
+.seccion-title {
+  float: left;
+  width: 50%;
+  background-image: url(../photos/reparacion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: white;
+  padding: 70px 30px;
+}
+
+.seccion-title h1 {
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+.seccion-title p{
+  background-color: rgba(255, 255, 0,0.5);
+  opacity: 1.5;
+  color: black;
+}
+.seccion-description h2{
+  color: white;
+}
+.seccion-description {
+  float: right;
+  width: 50%;
+  padding: 190px 0px 80px 110px;
+}
+.seccion-description p{
+  color: white;
+}
+
+.seccion-description h2 {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/* section */
+#section {
+  padding: 40px 0;
+}
+
+.section-gradients {
+  float: left;
+  width: 50%;
+  border-radius: 20px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.section-gradients-1 {
+  background-image: url(../photos/diagnostico.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.section-gradients-2 {
+  background-image: url(../photos/mantenimiento.gif) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.section-gradients-3 {
+  background-image: url(../photos/reparacion.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.section-gradients-4 {
+  background-image: url(../photos/cambiobateria.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.section-gradients-5 {
+  background-image: url(../photos/cambiopantalla.gif) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.section-gradients-6 {
+  background-image: url(../photos/problemaConexion.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.section-description {
+  float: right;
+  width: 40%; 
+  text-align: left;
+  padding: 15px 0 30px 30px;
+}
+.section-description p, .section-description h4 {
+  color: white;
+}
+
+.section-description h4 {
+  font-weight: 400;
+  padding-bottom: 10px;
+
+}
+
+.section-description p {
+  font-weight: 300;
+}
+
+/* Contact */
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 40%;
+  margin: auto;
+}
+
+/* Footer */
+#mainfooter {
+  text-align: center;
+  padding: 30px;
+  
+}
+.form-group label{
+  color: white;
+}
+
+/* Register */
+.form-register{
+  width: 700px;
+  height: 500px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px black;
+}
+
+.form-register h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e0ff00;
+  margin-left: 30%;
+}
+.controls{
+  width: 60%;
+  margin-left: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #e0ff00;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.controls::placeholder{
+  text-align: center;
+}
+.form-register p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.form-register a:hover{
+  color: white;
+  text-decoration: none;
+}
+.form-register .boton{
+  width: 60%;
+  background: #e0ff00;
+  color: black;
+  padding: 12px;
+  margin: 16px 0;
+  margin-left: 20%;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.form-register .boton:hover{
+  cursor: pointer;
+}
